@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praias do Brasil</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark" id="topo">
+        <div class="container-xl">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-auto mb-auto">
+                    <li class="nav-item" id="navcopacabana">
+                        <a class="nav-link active" aria-current="page" href="#copacabana">Copacabana</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#lencois">Lençóis
+                             Maranhenses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#brava"> Praia Brava</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#noronha"> Fernando de Noronha</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#carneiros"> Praia dos Carneiros</a>
+                    </li>
+                    <li class="nav-item" >
+                        <a class="nav-link active" aria-current="page" href="#criancas" id="navcriancas">Dicas para não perder as crianças na praia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#visite"> Visite também...</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--Criando a estrutura do menu check (menu que aparecerá quando a tela estiver pequena)-->
+
+    <input type="checkbox" id="menu-check">
+    <!--Cria um rótulo clicavel que aciona o check box acima, ele sabe que precisa acionar o check box acima devido ao parâmetro menu-check passado no atributo for, que corresponde ao mesmo id do input checkbox-->
+    <label for="menu-check" class="icone">&#9776; Menu</label> 
+    <nav class="mobile-menu">
+        <a class="nav-link active" aria-current="page" href="#copacabana">Copacabana</a>
+        <a class="nav-link active" aria-current="page" href="#lencois">Lençóis
+                             Maranhenses</a>
+        <a class="nav-link active" aria-current="page" href="#brava"> Praia Brava</a>
+        <a class="nav-link active" aria-current="page" href="#noronha"> Fernando de Noronha</a>
+        <a class="nav-link active" aria-current="page" href="#carneiros"> Praia dos Carneiros</a>
+        <a class="nav-link active" aria-current="page" href="#criancas" id="navcriancas">Dicas para não perder as crianças na praia</a>
+        <a class="nav-link active" aria-current="page" href="#visite"> Visite também...</a>
+    </nav>
+
+    <div class="container">
+                                <br>
+            <center><h1>Praias do Brasil🌊</h1></center>
+            
+            <!--Estrutura de organização das informações dentro de uma página web-->
+            <section id="copacabana">
+                <!--Adiiona uma imagem, possui o atributo src onde se referencia a imagem (onde está) e o alt auxilia na acessibilidade além de exibir o txt na tela  quando a iamgem falhar-->
+                <h3>Copacabana - RJ</h3>
+                
+                <div class="container text-center">
+                    <div class="row">
+                        <div class="col">
+                       <div class="text-center"><img src="img/copacabana.jpg"
+                    alt="Imagem da praia de copacabana a noite com belíssimas luzes.">
+                </div>
+                        </div>
+                            <div class="col">   
+                                <div class="row">
+                                <img src="img/copacabana3.jpg"
+                            alt="Imagem da praia de copacabana a noite com belíssimas luzes." class="imagemlado">
+                            <div class="row"><img src="img/copacabana2.jpg"
+                            alt="Imagem da praia de copacabana a noite com belíssimas luzes." class="imagemlado"></div>
+                            
+                        </div>
+                                </div>
+                                
+                            </div>
+                            </div>
+                
+                
+                   
+                
+                    <br>
+                <h2>Restaurantes recomendados</h2>
+                <!--Criando uma lista não ordenada-->
+                <ul> <!--Estrutura da lista-->
+                    <li>Nossa primeira recomendação é o restaurante 
+                        <a href="https://marius.com.br/">Marius</a>. Conhecido por sua cozinha Brasileira e Mediterrânea.
+                    </li>
+                    <br>
+                    <!--2º-->
+                    <li>Nossa segunda recomendação é o restaurante 
+                        <a href="https://fogodechao.com.br/location/botafogo/">Fogo de chão</a>. Conhecido por sua sofisticada rede brasileira de rodízio de carnes servidas à mesa e variado buffet de saladas.
+                    </li>
+                    <br>
+                    <!--3º-->
+                    <li>Nossa terceira recomendação é o restaurante 
+                        <a href="https://emiliano.com.br/gastronomia-rj/restaurante/">Emile</a>. que apresenta uma gastronomia jovem, atualizada, criativa. O Chef Camilo executa receitas contemporâneas com ingredientes locais. Pratos que surpreendem com a combinação perfeita de texturas, sempre utilizando ingredientes brasileiros, como farofas e frutas tropicais, com sabores e cores marcantes, sua marca registrada é apresentação colorida.
+                    </li>
+                </ul>
+                <br>
+                <br>
+                <br>
+                <h2>O que fazer em Copacabana</h2>
+                <!--Lista ordenada-->
+                <ol>
+                    <li><strong>O clássico:</strong> você pode tomar sol, pegar um bronzeado, nadar ou simplismente relaxar na areia com uma água de coco.</li>
+                    <br>
+                    <li><strong>Forte de copacabana:</strong> Oficialmente denominado como Museu Histórico do Exército / Forte de Copacabana (MHEx/FC), computa atualmente um fluxo de cerca de dez mil visitantes por mês, constituindo-se em um dos mais belos cartões-postais da cidade. </li>
+                    <br>
+                    <li><strong>Feirinha de copacabana:</strong>  A Feira da Praia de Copacabana atrai viajantes e moradores todos os dias para o calçadão mais famoso do Brasil. No meio da Avenida Atlântica, principal via que acompanha a orla do bairro, as pessoas podem conferir mais de 150 barracas com produtos variados.</li>
+
+                </ol>
+            </section>
+
+            <hr>
+            <br>
+            <section id="lencois">
+                <!--Adiiona uma imagem, possui o atributo src onde se referencia a imagem (onde está) e o alt auxilia na acessibilidade além de exibir o txt na tela  quando a iamgem falhar-->
+                <h3>Lençóis Maranhenses - MR</h3>
+                <div class="text-center"><img src="img/lencois.jpg"
+                    alt="Imagem da praia dos Lençóis Maranhenses com uma vista paradisíaca e desértica.">
+                </div>
+                    <br>
+                <h2>Restaurantes recomendados</h2>
+                <!--Criando uma lista não ordenada-->
+                <ul> <!--Estrutura da lista-->
+                    <li>Nossa primeira recomendação é o restaurante 
+                        <a href="https://georges.life/pt/atins/dining/">La Ferme de Georges</a>. O restaurante que é uma bela aventura culinária. É um daqueles lugares raros onde todos podem se sentir à vontade e são incentivadas a se envolverem e apresentar ideias frescas para o cardápio.
+                    </li>
+                    <br>
+                    <!--2º-->
+                    <li>Nossa segunda recomendação é o restaurante 
+                        <a href="https://ranchodasdunas.com.br/restaurante.php">Cozinha Do Rancho Das Dunas</a>. Nesse rastaurante cada prato é uma homenagem aos sabores locais, preparados com ingredientes frescos e técnicas tradicionais.
+                    </li>
+                    <br>
+                    <!--3º-->
+                    <li>Nossa terceira recomendação é o restaurante 
+                        <a href="https://livemenu.app/menu/66b4b6dc1c9eeb89cab195db">Casa de Juja Atins</a>. Esse é um restaurante clássico quando se trata de comida nordestina sofisticada, essa é a melhor definição para descrever a experiência de jantar nesse estabelecimento.
+                    </li>
+                </ul>
+                <br>
+                <br>
+                <br>
+                <h2>O que fazer em Lençóis Maranhenses</h2>
+                <!--Lista ordenada-->
+                <ol>
+                    <li><strong>Atins:</strong> É um povoado descolado, localizado entre o mar, o Rio Preguiças e o Parque Nacional dos Lençóis Maranhenses. Atins pode ser visitado em um passeio de um dia a partir de Barreirinhas, mas temos a certeza de que, ao chegar por lá, sua vontade vai ser de ficar, por isso, organize-se para passar ao menos duas noites na região.</li>
+                    <br>
+                    <li><strong>Santo Amaro:</strong> Ainda pouco explorada pelo turismo, Santo Amaro é um paraíso onde estão as mais belas lagoas do circuito principal de hospedagens na região. </li>
+                    <br>
+                    <li><strong>Passeio da Betânia:</strong> O Passeio da Betânia é o mais turístico da região, e não é por menos. Nessa área, existem muitas lagoas lindas e de cores diferentes.</li>
+
+                </ol>
+            </section>
+            
+            <hr>
+            <br>
+            <section id="brava">
+                <!--Adiiona uma imagem, possui o atributo src onde se referencia a imagem (onde está) e o alt auxilia na acessibilidade além de exibir o txt na tela  quando a iamgem falhar-->
+                <h3>Praia Brava - RJ</h3>
+                <div class="text-center"><img src="img/brava.jpg"
+                    alt="Imagem da praia Brava com montes d vegetação embbelezando a cidade" >
+                </div>
+                    <br>
+                <h2>Restaurantes recomendados</h2>
+                <!--Criando uma lista não ordenada-->
+                <ul> <!--Estrutura da lista-->
+                    <li>Nossa primeira recomendação é o restaurante 
+                        <a href="https://www.abracadabrahotel.com.br/restaurante">Místico Restaurant</a>. Com um novo bar e mesas ao ar livre de frente para a vista panorâmica da Baía da Armação, o restaurante cria um ambiente ideal para degustar os produtos frescos e os melhores pescados da região.
+                    </li>
+                    <br>
+                    <!--2º-->
+                    <li>Nossa segunda recomendação é o restaurante 
+                        <a href="https://www.viladasanta.com/gastronomia">La Gare</a>. De frente para a bucólica Praça dos Ossos e localizado no charmoso Hotel Vila da Santa, o La Gare oferece uma cozinha mediterrânea tropicalizada, que desperta os sentidos e celebra o melhor dos sabores.
+                    </li>
+                    <br>
+                    <!--3º-->
+                    <li>Nossa terceira recomendação é o restaurante 
+                        <a href="https://rockafish.com.br/">Rocka</a>. O restaurante traz a intensidade e a sofisticação que marcam o encontro perfeito entre o mar e a alta gastronomia
+                    </li>
+                </ul>
+                <br>
+                <br>
+                <br>
+                <h2>O que fazer na Praia Brava</h2>
+                <!--Lista ordenada-->
+                <ol>
+                    <li><strong> Baladas buzianas:</strong> Essas baladas costumam terminar apenas quando o sol está nascendo. E basta emendar com mais um dia de praia para você não parar!</li>
+                    <br>
+                    <li><strong>Orla Bardot:</strong> À beira da Praia da Armação, a Orla Bardot abraça os visitantes com uma linda vista e clima extremamente bucólico. É lugar para passear calmamente, apreciando a paisagem de barcos e casarões coloniais ao pôr do sol. </li>
+                    <br>
+                    <li><strong>Porto da Barra:</strong> O local, construído à beira-mar, oferece ambientes descolados e aconchegantes para quem deseja continuar curtindo depois da praia.</li>
+                </ol>
+            </section>
+
+            
+            <hr>
+            <br>
+            <section id="noronha">
+                <!--Adiiona uma imagem, possui o atributo src onde se referencia a imagem (onde está) e o alt auxilia na acessibilidade além de exibir o txt na tela  quando a iamgem falhar-->
+                <h3>Fernando de Noronha - PR</h3>
+                <div class="text-center"><img src="img/noronha.jpg"
+                    alt="Imagem da praia de Fernando de Noronha com uma vista belíssima do mar com seu azul marcante.">
+                </div>
+                    <br>
+                <h2>Restaurantes recomendados</h2>
+                <!--Criando uma lista não ordenada-->
+                <ul> <!--Estrutura da lista-->
+                    <li>Nossa primeira recomendação é o restaurante 
+                        <a href="https://pousadadovale.com/gastronomia/">Restaurante do Vale</a>. A proposta do restaurante é guiada pela valorização de ingredientes nativos, cultivados na horta própria ou adquiridos de produtores da ilha, respeitando o tempo da natureza e o sabor de cada estação.
+                    </li>
+                    <br>
+                    <!--2º-->
+                    <li>Nossa segunda recomendação é o restaurante 
+                        <a href="https://www.pousadateju.com.br/gastronomia">Teju-Açu</a>. O restaurante da Teju-Açú é, por si só, uma atração imperdível para quem visita Noronha. Seu arrojado projeto arquitetônico previu o mínimo de interferência no solo e o uso de madeira de reflorestamento
+                    </li>
+                    <br>
+                    <!--3º-->
+                    <li>Nossa terceira recomendação é o restaurante 
+                        <a href="https://opiconoronha.com.br/">O Pico</a>. Comida, diversão e arte. O lugar perfeito para encontrar amigos depois da praia, tomar um vinho, um drink ou uma cerveja gelada. Aqui você vai se surpreender com um menu variado e cuidadosamente planejado para oferecer o máximo em sabor. Pratos principais, sanduíches, e sobremesas. Aqui também tem boa música, um ambiente acolhedor e muita alegria.
+                    </li>
+                </ul>
+                <br>
+                <br>
+                <br>
+                <h2>O que fazer em Fernando de Noronha</h2>
+                <!--Lista ordenada-->
+                <ol>
+                    <li><strong>Morro Dois Irmãos:</strong> Um dos cartões postais da ilha, ótimo para fotos e admirar a paisagem. </li>
+                    <br>
+                    <li><strong>Mirantes:</strong> Diversos mirantes espalhados pela ilha, como o Mirante do Boldró e o Mirante da Praia do Sueste, oferecem vistas panorâmicas espetaculares.  </li>
+                    <br>
+                    <li><strong>Ilha Tour:</strong> OUm passeio que percorre os principais pontos turísticos da ilha, ideal para quem visita Noronha pela primeira vez.</li>
+
+                </ol>
+            </section>
+            <hr>
+            <br>
+            <section id="carneiros">
+                <!--Adiiona uma imagem, possui o atributo src onde se referencia a imagem (onde está) e o alt auxilia na acessibilidade além de exibir o txt na tela  quando a iamgem falhar-->
+                <h3>Praia dos Carneiros - PR</h3>
+                <div class="text-center"><img src="img/carneiros.jpg"
+                    alt="Imagem da praia dos Carneiros com uma vista para uma belíssima floresta ao fundo.">
+                </div>
+                    <br>
+                <h2>Restaurantes recomendados</h2>
+                <!--Criando uma lista não ordenada-->
+                <ul> <!--Estrutura da lista-->
+                    <li>Nossa primeira recomendação é o restaurante 
+                        <a href="https://www.beijupira.com.br/restaurante/beijupir%C3%A1-carneiros">Beijupirá</a>. Sob um belíssimo coqueiral e um gramado perfeito, integrado a Pousada Pontal dos Carneiros, encontram-se o Restaurante Beijupirá. O Restaurante está a poucos passos do melhor trecho da Praia dos Carneiros e do Rio Formoso, ambiente de natureza exuberante e visual paradisíaco.
+                    </li>
+                    <br>
+                    <!--2º-->
+                    <li>Nossa segunda recomendação é o restaurante 
+                        <a href="https://www.casadamoranga.com.br/">Casa da Moranga</a>. A Casa da Moranga é o único restaurante especializado em morangas recheadas do Brasil. Localizado em Tamandaré, cidade da paradisíaca Praia dos Carneiros, une a simplicidade do nosso lar com a qualidade da nossa gastronomia pra te surpreender.
+                    </li>
+                    <br>
+                    <!--3º-->
+                    <li>Nossa terceira recomendação é o restaurante 
+                        <a href="https://bbcarneiros.com.br/">Bora Bora</a>. Bora Bora é um restaurante à beira-mar com muito espaço e lugares para sentar, relaxar, comer ou beber uma gelada! Tem um cardápio enorme com uma variedade de comidas deliciosas, sem falar nos drinks mais lindos que já vi. A sua localização ideal oferece acesso direto à praia e fica a poucos passos da famosa igreja dos Carneiros!
+                    </li>
+                </ul>
+                <br>
+                <br>
+                <br>
+                <h2>O que fazer em Fernando de Noronha</h2>
+                <!--Lista ordenada-->
+                <ol>
+                    <li><strong>Morro Dois Irmãos:</strong> Um dos cartões postais da ilha, ótimo para fotos e admirar a paisagem. </li>
+                    <br>
+                    <li><strong>Mirantes:</strong> Diversos mirantes espalhados pela ilha, como o Mirante do Boldró e o Mirante da Praia do Sueste, oferecem vistas panorâmicas espetaculares.  </li>
+                    <br>
+                    <li><strong>Ilha Tour:</strong> OUm passeio que percorre os principais pontos turísticos da ilha, ideal para quem visita Noronha pela primeira vez.</li>
+
+                </ol>
+            </section>
+
+            <hr>
+            <br>
+            <section id="criancas">
+                <!--Adiiona uma imagem, possui o atributo src onde se referencia a imagem (onde está) e o alt auxilia na acessibilidade além de exibir o txt na tela  quando a iamgem falhar-->
+                <h3>Dicas pra não perder as crianças na praia</h3>
+                <div class="text-center"><img src="img/crianca.jpg"
+                    alt="Imagem da criança da criança perdida procurando os pais toda praiana" width="600 px">
+                </div>
+                    <br>
+                <p>Em praias movimentadas, é essencial ficar atento às crianças. Algumas dicas:</p>
+                
+            <ul class="list-group">
+                <li class="list-group-item list-group-item-warning">Mantenha um ponto de encontro definido.</li>
+                <li class="list-group-item list-group-item-warning">Use pulseiras de identificação nas crianças.</li>
+                <li class="list-group-item list-group-item-warning">Ensine às crianças seus nomes completos e números de telefone.</li>
+                 <li class="list-group-item list-group-item-warning">Esteja atento à ocalização das salva-vidas.</li>
+                 <li class="list-group-item list-group-item-warning">Evite praias muito movimentadas.</li>
+                 <li class="list-group-item list-group-item-warning">Incentive as crianças a não se afastarem muito.</li>
+                  <li class="list-group-item list-group-item-warning">Use uma barraca ou guarda-sol colorido como ponto de referência.</li>
+                  <li class="list-group-item list-group-item-warning">Esteja ciente dos arredores e identifique pontos de referência fixos.</li>
+
+            </ul>
+            </section>
+
+            <hr>
+            <div class="container">
+                <section id="visite">
+            
+                <center><h3>Outros lugares para você visitar nas suas próximas férias!</h3></center>
+                    <br>
+                <div class="card-deck">
+                    <div class="row">
+                        <div class="col-md-4 d-flex">
+                            <div class="card" style="width: 27rem;">
+                                <div class="card-body">
+                                <h2 class="card-title" id="betotitulo">Beto Carrero World!</h2>
+                                 <img src="img/betocarreiro.jpg" class="card-img" alt="Imagem do parque Beto Carreiro World.">
+                                  <br>
+                                <p>O maior parque temático da América Latina, localizado em Penha, Santa Catarina. Ele oferece mais de 100 atrações para todas as idades, incluindo brinquedos radicais, áreas temáticas, shows internacionais, zoológico e áreas inspiradas em filmes e desenhos animados como Hot Wheels, Madagascar e DreamWorks. </p>
+                                <button type="button" class="btn" style="background-color: rgb(43, 43, 122); text-align: center;">
+                                    <a href="https://www.betocarrero.com.br/" class="btn" style=" color:white;">
+                                        Saiba mais
+                                    </a>
+                                </button>
+                            </div>
+                            
+                            </div>
+                        </div>
+                        <div class="col-md-4 d-flex">
+                            <div class="card" style="width: 27rem;">
+                                <div class="card-body">
+                                <h2 class="card-title" id="laranjaistitulo">Thermas dos Laranjais!</h2>
+                                <img src="img/laranjais.jpg" class="card-img" alt="Imagem do Thermas dos Laranjais vista de cima">
+                                <br>
+                                <p>O Thermas dos Laranjais, em Olímpia, São Paulo, é um dos maiores parques aquáticos do mundo, famoso por suas águas termais e diversas atrações para todas as idades. O parque oferece mais de 55 atrações, incluindo toboáguas, piscinas de ondas, rio lento com corredeiras, praia artificial, área kids e muito mais.  </p>
+                                <button type="button" class="btn" style="background-color: rgb(43, 43, 122); text-align: center;">
+                                    <a href="https://www.termas.com.br/" class="btn" style=" color:white;">
+                                        Saiba mais
+                                    </a>
+                                </button>
+                            </div>
+                            
+                            </div>
+                        </div>
+                        <div class="col-md-4 d-flex">
+                            <div class="card" style="width: 27rem;">
+                                <div class="card-body">
+                                <h2 class="card-title" id="cacautitulo">Bendito Cacao Resort!</h2>
+                                <img src="img/benditocacau.jpg" class="card-img" alt="Imagem do resort bendito cacau vista de cima com a cidade ao fundo">
+                                 <br>
+                                <p>No ponto mais alto de uma montanha, a 1700 metros de altitude e vista de 360 graus da cidade de Campos do Jordão, o Bendito Cacao Resort & Spa vai além da hospedagem. O hotel foi especialmente pensado e decorado para oferecer momentos únicos, por meio de experiências intensas de imersão na cultura do cacau.</p>
+                                <button type="button" class="btn" style="background-color: rgb(43, 43, 122); text-align: center;">
+                                    <a href="https://www.benditocacaoresort.com.br/" class="btn" style=" color:white;">
+                                        Saiba Mais
+                                    </a>
+                                </button>
+                            </div>
+                            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </section>
+
+            </div>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    crossorigin="anonymous"></script>
+</html>

@@ -1,0 +1,138 @@
+/*gap -> da um espacinho entre os elementos, ex: gap:20px*/
+body {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    background-color: #cfe5f7;
+    color: #080131;
+    text-align: justify;
+}
+.navbar {
+    text-align: center;
+    background-color: hsl(249, 96%, 10%);
+    position: sticky;
+    top:0;
+    z-index: 2000;
+}
+
+h1{text-align: center;}
+hr{color: #080131;}
+
+
+section{
+    background-color: #c8e1f5;
+    margin: 5px; /*Distancia entre a borda da section e demais elementos eternos*/
+    padding: 20px; /*Distânia entre o conteúdo da section e a borda da mesma section*/
+    border-radius: 8px; /*borda arredondada*/
+}
+
+img{
+    max-width: 600px;
+    height: auto;
+    /*Aplicando margin ou padding em diferenças posições:display:
+    - margin-top: cima
+    - margin-botton: ...*/
+}
+
+#criancas{
+    background-color: #f7faca;
+}
+
+p{
+    line-height: 1.6;
+}
+
+#navcriancas{
+    color:rgb(212, 203, 123);
+}
+
+.nav-item:hover{
+    background-color: rgb(87, 118, 202);
+}
+
+#betotitulo{
+    color:rgb(165, 26, 16);
+}
+#laranjaistitulo{
+    color:rgb(165, 105, 16);
+}
+#cacautitulo{
+    color:rgb(53, 33, 5);
+}
+
+.card-body { /*Empilha verticalmente os elementos*/
+  display: flex;
+  flex-direction: column;
+}
+
+.card-body .btn { /*faz com que o botão ocupe todo o espaço disponível acima dele, empurrando-o para o fundo do card*/
+  margin-top: auto;
+}
+
+.card-img{
+    height: 150px;
+}
+
+/*Estilizando o menu responsivo para tamanhos de telas pequena*/
+
+/*Faz o nosso menu e todos os seus itens ficarem invisíveis*/
+.icone, .mobile-menu, #menu-check{  
+    display: none;
+}
+
+/*O comando abaixo não está sendo usado no momento'*/
+.desktop-menu{
+    display: block;
+}
+/*@media é uma regra do css para responsividade, aplicando os estilos a eterminadas situações, como por exemplo quando as telas são pequenas demais ou grande demais*/
+@media(max-width:1000px){
+    #topo{
+        display: none;
+    }
+
+    /*Oculta a caixinha do checkbox*/
+    #menu-check{
+        display: none;
+    }
+    .icone{
+        display: block;
+        background-color: #080131;
+        color: #cde5f8;
+        padding: 10px;
+        cursor: pointer;
+        z-index: 2000;
+    }
+    .mobile-menu{
+        display: none;
+        flex-direction: column;
+        background-color: #080131;
+        z-index: 2000;
+    }
+
+    .mobile-menu a{
+        color: #cde5f8;
+        padding: 10px;
+        text-decoration: none;
+        border-top: 1px solid rgb(133, 130, 128);
+        
+    }
+
+    /*Ativando o menu como checkbox "marcado"*/
+    #menu-check:checked + .icone + .mobile-menu{
+        display: flex;
+    }
+
+/*Fixando o menu no topo*/
+.icone{
+    position : sticky;
+    top:0;
+}
+
+/*Fixando os itens do menu*/
+.mobile-menu{
+    position: sticky;
+    top: 42px;
+}
+.imagemlado{
+    width: 200px;
+}
+}
