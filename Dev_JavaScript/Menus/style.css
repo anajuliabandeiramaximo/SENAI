@@ -1,0 +1,33 @@
+/*DEFININDO A LATERAL FIXA PARA O MENU*/
+.menu-vertical{
+    width: 200px;
+    height: 100vh; /*Tamanho da janela*/
+    position: fixed;
+    background-color: darkslateblue;
+    padding-top: 40px; /*Espaço entre o topo da tela*/
+}
+
+/*Removendo os macrcadores e atribuindo espaçamento padrão da lista*/
+.menu-vertical a{
+    display:block;
+    color: rgb(243, 240, 255);
+    padding: 15px;
+    text-decoration: none;
+}
+
+/*Estilizando os links do Menu*/
+.menu-vertical a{
+    display:block;
+    color: white;
+    padding:15px;
+    text-decoration: none;
+}
+
+.nav-item:hover{
+    color:#b887f0;
+    border: 2px solid;
+}
+
+p{
+    color:#b887f0;
+}

@@ -1,0 +1,33 @@
+.menu-hover,ul{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    background-color: white;
+    padding: 10px 20px;
+    justify-content: center;
+}
+
+.menu-hover a{
+    text-decoration: none;
+    color: black;
+    position: relative;
+    padding: 5px;
+    /*Precisa do Evento! Mas posso decidir a duração do mesmo e a sua suavidade*/
+    /*Transição suave na mudança de cor*/
+    transition: color 0.5s ease;
+}
+/*Evento*/
+ .menu-hover a::after{
+        content: ""; /*Cria um elemento vazio que depois vai ser preenchido com a linha do nossos evento*/
+        position: absolute; /*Posição da linha em relação ao texto*/
+        bottom:0;
+        left:0; /*A linha irá começar a aparecer do lado esquerdo*/
+        width:0; /*Linha começa "invisivbel" com 0% de largura*/
+        background-color: deeppink;
+        transition: width 0.5s ease;
+        height: 2px;
+    }
+
+.menu-hover a:hover::after{
+    width: 100%;
+}

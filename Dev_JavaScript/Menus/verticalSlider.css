@@ -1,0 +1,43 @@
+/*DEFININDO A LATERAL FIXA PARA O MENU*/
+#menu{
+    display: none; /*Esconde  o ícone checkbox da tela*/
+}
+
+.icone{
+    display: block; /*Exibe cada item, como um bloco, ocupando sua propria linha*/
+    color:rgb(38, 0, 88);
+    padding: 10px;
+    cursor: pointer;
+    width: fit-content; /*Ajusta a largura ao tamanho do conteúdo*/
+    padding-top: 10px; /*Espaço entre o topo da tela*/
+}
+
+.menu-vertical{
+    display: none; /*O que faz o menu aparecer e desaparecer*/
+    width: 200px;
+    height: 100vh; /*Tamanho da janela*/
+    background-color: darkslateblue;
+    flex-direction:column;
+   
+}
+
+/*Removendo os macrcadores e atribuindo espaçamento padrão da lista*/
+.menu-vertical a{
+    display:block;
+    color: rgb(243, 240, 255);
+    padding: 15px;
+    text-decoration: none;
+}
+
+.nav-item:hover{
+    color:#b887f0;
+    border: 2px solid;
+}
+
+p{
+    color:#b887f0;
+}
+
+#menu:checked + .icone + .menu-vertical{
+    display: flex;
+}
