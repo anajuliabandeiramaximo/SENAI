@@ -1,4 +1,5 @@
 /*gap -> da um espacinho entre os elementos, ex: gap:20px*/
+/*id: #, class: .*/
 body {
     font-family: 'Courier New', Courier, monospace;
     font-size: 20px;
@@ -132,7 +133,30 @@ p{
     position: sticky;
     top: 42px;
 }
+
 .imagemlado{
-    width: 200px;
+    min-height:610px;
+    min-width:624px;
+    margin-left: 11px;
 }
+}
+
+.imagemesquerda{
+    height: 610px;
+    width: 600px;
+}
+.imagemlado{
+    height: 305px;
+    width: 600px;
+}
+
+footer{
+    background-color: #080131;
+    text-align: center;
+    color: #dae0ff;
+    padding: 5px;
+}
+.titulo_praias{
+    color:#c8e1f5;
+    padding-top:100px;
 }
