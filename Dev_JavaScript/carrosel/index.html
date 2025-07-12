@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrosel de Imagens</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <!--Importa o arquivo css do Bootstrap versão 4.5.2 p/ aplicar estilos prontos de layout como botões. carrosel, etc-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!--Importa o Popper.js, uma biblioteca que ajuda no posicionamento "correto" de elementos como menus, dropdown (listas suspensas) e outros elementos em nosso projeto-->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <!--Importa o JavaScript do Bootstrap versão 4.5.2 ativando os componentes interativos como por exemplo o carrosel de imagens-->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"> </script>
+    
+</head>
+<body>
+    <div class="container">
+    <h1>Preserve a Natureza – Nosso Planeta, Nosso Dever</h1>
+    <br>
+    <p>A natureza é a nossa casa e fonte de vida. Cada árvore, animal e gota de água tem um papel essencial no equilíbrio do planeta. Este site convida você a observar, refletir e se encantar com a beleza do mundo natural. Explore os carrosséis de imagens e vídeos, aprenda com cada exemplo e descubra formas de preservar o que temos de mais precioso: a vida em todas as suas formas.</p>
+    <hr>
+    
+        
+        <!--Carrosel 1 - Passagem automatica-->
+        <div id="carrossel1-Slides" class="carousel slide"    data-ride="carousel" data-interval="2000"> <!--Esse data-ride é  pra passar automaticamente as imagens, e obs: a classe tem que   ser exatamente assim pois pega dos reursos o bootstrap-->
+
+            <!--A div abaixo contém todos os slides do carrosel, o que determina iso é o atributo carousel-inner de class-->
+            <div class="carousel-inner">
+                <!--Agora as divs que conterão as imagens-->
+                <div class="carousel-item active"> <!--O active faz a imagem ser o primeiro elemento a ser mostrado-->
+                    <img class="d-block w-100" height="500px"src="floresta.jpg" alt="Imagem de uma floresta com uma paisagem típica do outono">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" height="500px" src="floresta2.jpg" alt="Imagem de uma floresta com uma bela paisagem verde">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" height="500px" src="leopardo.jpg" alt="Imagem de um leopardo">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" height="500px" src="ursopardo.jpg" alt="Imagem de dois ursos pardos em uma cachoeira">
+                </div>
+            </div>
+        </div>
+    
+         <hr>
+       
+           <div id="carrossel2-Slides" class="carousel slide"  data-ride="carousel" data-interval="3000">
+                <!-- Contém todos os slides, e o que determina isso é o atributo carousel-inner -->
+                <div class="carousel-inner">
+                    <!--As div's que de fato contém as imagens, atributo active determina qual será a imagem que será exibida primeiro-->
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" style="height:500px;" src="floresta.jpg" alt="">
+                    </div>
+                    <!--Atributo carousel-item define cada slide individualmente -->
+                    <div class="carousel-item">
+                        <img class="d-block w-100" style="height:500px;" src="floresta2.jpg" alt="">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" style="height:500px;" src="leopardo.jpg" alt="">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" style="height:500px;" src="ursopardo.jpg" alt="">
+                    </div>
+                </div>
+                <!--Botões Next e Prev-->
+               
+                <!-- Atributo class="carousel-control-prev": Define posição e estilo do botão (seta) à esquerda
+                Atributo href= será o id do carrossel que ele irá controlar
+                role=button:Informa o programa de leitura de tela (deficientes visuais) que o elemento funciona como um botão
+                aria-hidden='true': esconde o ícone do botão caso seja identificado que o usuário está utilizando um programa de leitor de tela.
+                class="sr-only": Habilita o aparecimento do texto quando leitor de tela estiver ativo
+                data-slide="prev" : Determina que deve voltar o slide.
+                carousel-control-prev-icon: ícone de seta para esquerda -->      
+
+                <!--Botão Anterior (prev)-->
+                <a class="carousel-control-prev" href="#carrossel2-Slides" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Anterior</span>
+                </a>
+                <!--Botão Próximo-->
+                <a class="carousel-control-next" href="#carrossel2-Slides" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Próximo</span>
+                </a>
+            </div>
+            <br>
+            <hr>
+
+            <div id="carrossel3-Slides" class="carousel slide"    data-ride="carousel" data-interval="2000"> 
+           
+                <ol class="carousel-indicators">
+                    <li data-target ="#carrossel3-Slides" data-slide-to="0" class="active"></li>
+                    <li data-target ="#carrossel3-Slides" data-slide-to="1"></li>
+                    <li data-target ="#carrossel3-Slides" data-slide-to="2"></li>
+                    <li data-target ="#carrossel3-Slides" data-slide-to="3"></li>
+                </ol>
+
+                 <div class="carousel-inner">
+                    <div class="carousel-item">
+                        <img class="d-block w-100" style="height:500px;" src="floresta.jpg" alt="">
+                    </div>
+                    <!--Atributo carousel-item define cada slide individualmente -->
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" style="height:500px;" src="floresta2.jpg" alt="">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" style="height:500px;" src="leopardo.jpg" alt="">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" style="height:500px;" src="ursopardo.jpg" alt="">
+                    </div>
+                </div>
+
+         </div>
+   
+    </div>
+</body>
+</html>
