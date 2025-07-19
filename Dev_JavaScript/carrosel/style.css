@@ -1,7 +1,15 @@
-#carrossel1-Slides, #carrossel2-Slides, #carrossel3-Slides{
+#carrossel1-Slides, #carrossel2-Slides, #carrossel3-Slides, #carrossel4-Slides{
     width: 90%;
     margin: auto;
 }
 p{
     text-align: center;
+}
+
+hr{
+    width: 80%;
+    background-color: darkolivegreen;
+}
+body{
+    padding: 15px;
 }
