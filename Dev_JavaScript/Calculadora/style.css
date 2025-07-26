@@ -1,0 +1,55 @@
+/*Remove as margens e espaçamentos padrão de todos os elementos*/
+*{
+    margin:0;
+    padding: 0;
+}
+h1{
+    font-size: 50px;;
+}
+
+body{
+background-image: radial-gradient(circle,rgba(210, 191, 245, 1) 20%, rgba(207, 77, 227, 1) 100%); /*Gradiente*/
+}
+.fundo{
+    height: 100vh;
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.corpoCalc{
+    margin-top: 2%;
+    position:absolute;
+   background-color: rgba(170, 120, 216, 0.8);
+    transform:translate(-50%,-50%);
+    top:50%;
+    left:50%;
+    border-radius: 15px;
+    padding: 15px;
+}
+.botao{
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    cursor: pointer;
+    margin: 3px;
+    background-color: rgb(33, 4, 66);
+    border: none;
+    color:white;
+}
+
+.botao:hover{
+    background-color: rgb(72, 31, 138);
+}
+
+#resultado{
+    background-color: white;
+    width: 214px;
+    height: 30px;
+    margin: 5px;
+    font-size: 25px;
+    color: black;
+    text-align: right;
+    padding: 5px;
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" type="text/javascript" defer></script>
+</head>
+<body>
+    <center><h1 style="margin-top:100px;">Calculadora</h1></center>
+    <div class="fundo">
+        <div class="corpoCalc">
+            <p id="resultado"></p>
+            <!--Criando os botões de nº e operações--> 
+            <table>
+                <!--Linha 1-->
+                <tr>
+                    <!--Coluna 1-->
+                    <!--Botão "C" chama a função de limpar a tela-->
+                    <td><button class="botao" onclick="clean()">C</button></td>
+                    <!--Coluna 2-->
+                    <!--Botão "<" chama a função de apagar o último digito da tela-->
+                    <td><button class="botao" onclick="back()"><</button></td>
+                    <!--Coluna 3-->
+                    <!--Botão "/" insere o caracter chamado na função-->
+                    <td><button class="botao" onclick="insert('/')">/</button></td>
+                    <!--Coluna 4-->
+                    <!--Botão "*" insere o caracter chamado na função-->
+                    <td><button class="botao" onclick="insert('*')">*</button></td>
+                </tr>
+                <!--Fim da linha 1-->
+                <!--Linha 2-->
+                <tr>
+                    <!--Insere os números respectivos na tela-->
+                    <!--Coluna 1-->
+                    <td><button class="botao" onclick="insert('7')">7</button></td>
+                    <!--Coluna 2-->
+                    <td><button class="botao" onclick="insert('8')">8</button></td>
+                    <!--Coluna 3-->
+                    <td><button class="botao" onclick="insert('9')">9</button></td>
+                    <!--Coluna 4-->
+                    <!--Botão "-" insere o caracter chamado na função-->
+                    <td><button class="botao" onclick="insert('-')">-</button></td>
+                </tr>
+                <!--Fim da linha 2-->
+                <!--Linha 3-->
+                <tr>
+                    <!--Insere os números respectivos na tela-->
+                    <!--Coluna 1-->
+                    <td><button class="botao" onclick="insert('4')">4</button></td>
+                    <!--Coluna 2-->
+                    <td><button class="botao" onclick="insert('5')">5</button></td>
+                    <!--Coluna 3-->
+                    <td><button class="botao" onclick="insert('6')">6</button></td>
+                    <!--Coluna 4-->
+                    <!--Botão "+" insere o caracter chamado na função-->
+                    <td><button class="botao" onclick="insert('+')">+</button></td>
+                </tr>
+                <!--Fim da linha 3-->
+                <!--Linha 4-->
+                <tr>
+                    <!--Insere os números respectivos na tela-->
+                    <!--Coluna 1-->
+                    <td><button class="botao" onclick="insert('1')">1</button></td>
+                    <!--Coluna 2-->
+                    <td><button class="botao" onclick="insert('2')">2</button></td>
+                    <!--Coluna 3-->
+                    <td><button class="botao" onclick="insert('3')">3</button></td>
+                    <!--Coluna 4-->
+                      <!--Botão "=" insere o caracter chamado na função-->
+                    <td rowspan="2"><button  style="height: 108px;" class="botao" onclick="calcular()">=</button></td> <!--Essa coluna ocupará duas linhas-->
+                </tr>
+                <!--Fim da linha 4-->
+                <!--Linha 5-->
+                <tr>
+                    <!--Coluna 1-->
+                    <!--Insere o nº 0 na tela da calculadora-->
+                    <td><button class="botao" onclick="insert('0')">0</button></td>
+                    <!--Coluna 2-->
+                    <!--Botão "." insere o caracter chamado na função-->
+                    <td><button class="botao" onclick="insert('.')">.</button></td>
+                    <!--Coluna 3-->
+                    <!--Botão "X²" insere o caracter chamado na função-->
+                    <td><button class="botao" onclick="insert('**')">X<sup>y</sup></button></td>
+                </tr>
+                <!--Fim da linha 5-->
+            </table>
+
+        </div>
+</body>
+</html>                   
