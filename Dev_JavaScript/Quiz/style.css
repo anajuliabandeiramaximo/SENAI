@@ -1,0 +1,26 @@
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-image: radial-gradient(circle,rgba(210, 191, 245, 1) 20%, rgba(207, 77, 227, 1) 100%); /*Gradiente*/
+    margin: 20px;
+    padding: 20px;
+    color:rgb(255, 255, 255);
+     font-weight: bold; /*Deixa a letra mais gordinha*/
+}
+   
+
+h1{
+    text-align: center;
+}
+
+#pergunta1,#pergunta2,#pergunta3{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 300px;
+}
+
+button{
+    font-weight: bold;
+    height: 50px;
+    border-radius: 15px;
+}

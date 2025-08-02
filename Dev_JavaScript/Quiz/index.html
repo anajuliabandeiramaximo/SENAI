@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz HTML e CSS</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <h1>Quiz: HTML e CSS</h1>
+    <p>1. Qual tag usamos para inserir uma imagem em HTML?</p>
+    <div id="pergunta1">
+        <!--Esse codigo que coloquei abaixo são os colchetes sem ser para comandos do código-->
+        <button id="a1" onclick="vperg1(this,'a1')"> a) &lt;div&gt;</button>
+        <button id="b1" onclick="vperg1(this,'b1')"> b) &lt;link&gt;</button>
+        <button id="c1" onclick="vperg1(this,'c1')"> c) &lt;img&gt;</button>
+        <button id="d1" onclick="vperg1(this,'d1')"> d) &lt;image&gt;</button>
+        <p id="resp1"></p>
+
+    </div>
+    <br>
+    <p>2. Qual propriedade do CSS altera a cor do texto</p>
+    <div id="pergunta2">
+        <!--Esse codigo que coloquei abaixo são os colchetes sem ser para comandos do código-->
+        <button id="a2" onclick="vperg2(this,'a2')"> a) background</button>
+        <button id="b2" onclick="vperg2(this,'b2')"> b) color</button>
+        <button id="c2" onclick="vperg2(this,'c2')"> c) font</button>
+        <button id="d2" onclick="vperg2(this,'d2')"> d) text-color</button>
+        <p id="resp2"></p>
+       
+
+    </div>
+    <p>3. Qual a framework front-end mais utilizado do mundo?</p>
+    <div id="pergunta3">
+        <!--Esse codigo que coloquei abaixo são os colchetes sem ser para comandos do código-->
+        <button id="a3" onclick="vperg3(this,'a3')"> a) Pure</button>
+        <button id="b3" onclick="vperg3(this,'b3')"> b) Foundation</button>
+        <button id="c3" onclick="vperg3(this,'c3')"> c) Materialize</button>
+        <button id="d3" onclick="vperg3(this,'d3')"> d) Bootstrap</button>
+        <p id="resp3"></p>
+
+        <button class="limpar" onclick="limpar()">Reset</button>
+    </div>
+
+    
+</body>
+</html>
