@@ -1,0 +1,33 @@
+#freddy {
+    width: 300px;
+    height: 300px;
+    background-image: url('img/freddy_fofo.jpg');
+    background-size: cover;
+}
+
+#freddy:hover {
+    background-image: url('img/freddy_assustador.gif');
+    transform: scale(1.05);
+    filter: hue-rotate(-15deg) contrast(1.3) brightness(0.9);
+    box-shadow: 0 0 30px 5px red;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#bonnie {
+    width: 300px;
+    height: 300px;
+    background-image: url('img/bonnie_fofo.jpg');
+    background-size: cover;
+}
+
+#bonnie:hover {
+    background-image: url('img/bonnie_assustador.gif');
+    transform: scale(1.05);
+    filter: hue-rotate(-15deg) contrast(1.3) brightness(0.9);
+    box-shadow: 0 0 30px 5px red;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
